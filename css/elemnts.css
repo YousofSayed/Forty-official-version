@@ -1,0 +1,1151 @@
+/* first-section  */
+
+.first-section {
+  margin-top: 80px;
+}
+.first-section .countainer h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 50px;
+  position: relative;
+}
+.first-section .countainer h1::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 2px;
+  background-color: white;
+  bottom: -20px;
+}
+.first-section .countainer h2 {
+  color: white;
+  font-size: 35px;
+  margin-top: 50px;
+}
+.first-section .countainer p {
+  color: white;
+  margin-top: 30px;
+  line-height: 1.4;
+  font-size: 19px;
+}
+/* first-section  */
+/* second-section */
+.second-section {
+  margin-top: 30px;
+}
+.second-section .countainer {
+  display: flex;
+  gap: 50px;
+}
+.second-section .countainer h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.second-section .countainer p {
+  color: white;
+  line-height: 1.3;
+  font-size: 19px;
+}
+/* second-section */
+/* three-section */
+.three-section {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+.three-section .countainer {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-gap: 15px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.39);
+}
+.three-section .countainer h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+.three-section .countainer p {
+  color: white;
+  line-height: 1.3;
+  font-size: 19px;
+  margin-top: 20px;
+}
+/* three-section  */
+/* responsive for first & second sections */
+@media (max-width: 767px) {
+  p {
+    font-size: 17px !important;
+  }
+  .first-section .countainer {
+    flex-direction: column;
+  }
+  .first-section .countainer h1 {
+    font-size: 35px;
+  }
+  .first-section .countainer h1::before {
+    width: 150px;
+  }
+  .first-section .countainer h2 {
+    font-size: 28px;
+  }
+  .second-section .countainer {
+    flex-direction: column;
+  }
+  .three-section .countainer {
+    flex-direction: column;
+  }
+}
+/* responsive for first & second sections */
+/* hard section  */
+.hard-section {
+  margin-top: 30px;
+}
+.hard-section .countainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.hard-section .countainer h1 {
+  color: white;
+}
+.hard-section .countainer .right-column {
+  /* width: 50%; */
+}
+.hard-section .countainer .right-column .text {
+  border-bottom: 1px solid rgba(146, 144, 144, 0.39);
+  padding-bottom: 30px;
+}
+.hard-section .countainer .right-column .text p {
+  color: white;
+  max-width: 500px;
+  line-height: 1.8;
+  font-size: 19px;
+}
+.hard-section .countainer .right-column .text p code {
+  background-color: rgba(240, 248, 255, 0.068);
+  padding: 3px 5px;
+}
+.hard-section .countainer .right-column .heading-p {
+  padding: 30px 0;
+  color: white;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.39);
+}
+.hard-section .countainer .right-column .heading-p h2 {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+.hard-section .countainer .right-column .heading-p h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.hard-section .countainer .right-column .heading-p h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hard-section .countainer .right-column .nunc {
+  padding: 30px 0;
+}
+.hard-section .countainer .right-column .nunc p {
+  color: white;
+  line-height: 1.4;
+  font-size: 19px;
+}
+.hard-section .countainer .left-column .pd-buttons {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 30px;
+}
+.hard-section .countainer .left-column button {
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hard-section .countainer .left-column .pd-buttons button:first-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .pd-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .pd-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .pd-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+.hard-section .countainer .left-column .pd-buttons a {
+  color: #282f4d;
+  letter-spacing: 2px;
+  font-size: 16.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hard-section .countainer .left-column .pd-buttons button:last-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .pd-buttons button:last-child a {
+  color: white;
+}
+/* large */
+.hard-section .countainer .left-column .ll-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 60px;
+}
+
+.hard-section .countainer .left-column .ll-buttons button {
+  padding: 15px 45px;
+}
+.hard-section .countainer .left-column .ll-buttons a {
+  color: #282f4d;
+  letter-spacing: 2px;
+  font-size: 25.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hard-section .countainer .left-column .ll-buttons button:last-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .ll-buttons button:first-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .ll-buttons button:first-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .dd-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 95px;
+}
+.hard-section .countainer .left-column .dd-buttons button {
+  padding: 10px 30px;
+}
+.hard-section .countainer .left-column .dd-buttons a {
+  color: #282f4d;
+  letter-spacing: 2px;
+  font-size: 16.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.hard-section .countainer .left-column .dd-buttons button:last-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .dd-buttons button:first-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .dd-buttons button:first-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .dd-buttons button:last-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .dd-buttons button:first-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .dd-buttons button:first-child:hover a {
+  color: #b9f1ff;
+}
+
+.hard-section .countainer .left-column .ll-buttons button:last-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .ll-buttons button:first-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .ll-buttons button:first-child:hover a {
+  color: #b9f1ff;
+}
+.hard-section .countainer .left-column .ss-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 143px;
+}
+.hard-section .countainer .left-column .ss-buttons button {
+  padding: 7px 20px;
+}
+.hard-section .countainer .left-column .ss-buttons a {
+  color: #282f4d;
+  letter-spacing: 3px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-weight: 700;
+}
+.hard-section .countainer .left-column .ss-buttons button:last-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .ss-buttons button:first-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .ss-buttons button:first-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .ss-buttons button:last-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .ss-buttons button:first-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .ss-buttons button:first-child:hover a {
+  color: #b9f1ff;
+}
+.hard-section .countainer .left-column .fit-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 33px;
+}
+.hard-section .countainer .left-column .fit-buttons button {
+  padding: 10.5px 85px;
+}
+.hard-section .countainer .left-column .fit-buttons a {
+  color: #282f4d;
+  letter-spacing: 3px;
+  font-size: 15.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-weight: 550;
+}
+.hard-section .countainer .left-column .fit-buttons button:last-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .fit-buttons button:last-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .fit-buttons button:first-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .fit-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .fit-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .fit-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+
+.hard-section .countainer .left-column .fits-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+.hard-section .countainer .left-column .fits-buttons button {
+  padding: 5.5px 62.5px;
+}
+.hard-section .countainer .left-column .fits-buttons a {
+  color: #282f4d;
+  letter-spacing: 3px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-weight: 550;
+}
+.hard-section .countainer .left-column .fits-buttons button:last-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .fits-buttons button:last-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .fits-buttons button:first-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .fits-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .fits-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .fits-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+
+.hard-section .countainer .left-column .icon-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 85px;
+}
+.hard-section .countainer .left-column .icon-buttons button {
+  padding: 10.5px 40px;
+}
+.hard-section .countainer .left-column .icon-buttons a {
+  color: #282f4d;
+  letter-spacing: 3px;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: flex;
+  gap: 10px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  font-weight: 550;
+}
+.hard-section .countainer .left-column .icon-buttons button:last-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .icon-buttons button:last-child a {
+  color: white;
+}
+.hard-section .countainer .left-column .icon-buttons button:first-child {
+  border: none;
+  background-color: white;
+}
+.hard-section .countainer .left-column .icon-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .icon-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.hard-section .countainer .left-column .icon-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+
+.hard-section .countainer .left-column .pd2-buttons {
+  display: flex;
+  margin-top: 30px;
+  gap: 90px;
+}
+.hard-section .countainer .left-column .pd2-buttons button {
+  cursor: default;
+  opacity: 0.4;
+}
+.hard-section .countainer .left-column .pd2-buttons button:first-child {
+  border: none;
+  background-color: white;
+}
+
+.hard-section .countainer .left-column .pd2-buttons a {
+  color: #282f4d;
+  letter-spacing: 2px;
+  font-size: 16.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: default;
+}
+.hard-section .countainer .left-column .pd2-buttons button:last-child {
+  border: white 2px solid;
+}
+.hard-section .countainer .left-column .pd2-buttons button:last-child a {
+  color: white;
+}
+@media (max-width: 767px) {
+  .hard-section .countainer {
+    flex-direction: column;
+  }
+  .hard-section .countainer .left-column .pd-buttons {
+    /* flex-direction: column; */
+  }
+  .hard-section .countainer .left-column .pd-buttons button {
+    padding: 0;
+    width: 35%;
+    height: 40px;
+  }
+  .hard-section .countainer .left-column .ll-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hard-section .countainer .left-column .ll-buttons button {
+  }
+  .hard-section .countainer .left-column .ss-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hard-section .countainer .left-column .dd-buttons {
+    gap: 30px;
+  }
+  .hard-section .countainer .left-column .dd-buttons button {
+    padding: 0;
+    width: 35%;
+    height: 40px;
+  }
+  .hard-section .countainer .left-column .fit-buttons {
+    /* flex-direction: column; */
+  }
+  .hard-section .countainer .left-column .fit-buttons button {
+    padding: 0;
+    width: 35%;
+    height: 40px;
+  }
+  .hard-section .countainer .left-column .fits-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hard-section .countainer .left-column .icon-buttons {
+    gap: 30px;
+  }
+  .hard-section .countainer .left-column .icon-buttons a {
+    gap: 10px;
+  }
+  .hard-section .countainer .left-column .icon-buttons button {
+    width: 35%;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hard-section .countainer .left-column .pd2-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hard-section .countainer .left-column .pd2-buttons button {
+    padding: 0;
+    width: 100%;
+    height: 40px;
+  }
+}
+/* hard section  */
+/* second-hard section  */
+.second-hard-section .countainer {
+  display: flex;
+  justify-content: space-between;
+}
+.second-hard-section .countainer .left-coulmn .perant {
+  display: flex;
+  gap: 50px;
+}
+.second-hard-section .countainer .left-coulmn .perant .l-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.second-hard-section .countainer .left-coulmn .perant .l-column ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.second-hard-section
+  .countainer
+  .left-coulmn
+  .perant
+  .l-column
+  ul
+  li:first-child {
+  margin-top: 20px;
+}
+.second-hard-section .countainer .left-coulmn .perant .l-column .row .omeg {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.second-hard-section .countainer .left-coulmn .perant .r-column {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+.second-hard-section .countainer .left-coulmn .perant .r-column ol li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.second-hard-section .countainer .left-coulmn .perant .r-column .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.second-hard-section
+  .countainer
+  .left-coulmn
+  .perant
+  .r-column
+  .icons
+  .social-icons {
+  display: flex;
+  gap: 20px;
+}
+.second-hard-section
+  .countainer
+  .left-coulmn
+  .perant
+  .r-column
+  .icons
+  .social-icons:last-of-type {
+  font-size: 30px;
+}
+.second-hard-section .countainer .right-column form .name-email {
+  display: flex;
+  gap: 20px;
+}
+.second-hard-section .countainer .right-column form .name-email input {
+  background-color: #2b304a;
+  border: none;
+  padding: 10px 10px;
+  font-size: 19px;
+}
+
+.second-hard-section .countainer .right-column form .name-email input:focus {
+  border: #b9f1ff 2px solid;
+  outline: none;
+}
+.second-hard-section .countainer .right-column form .select select {
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  background-color: #2b304a;
+  border: none;
+  font-size: 19px;
+  padding: 10px 10px;
+}
+.second-hard-section .countainer .right-column form .select select:focus {
+  border: #b9f1ff 1px solid;
+  outline: none;
+}
+.second-hard-section .countainer .right-column form .radio {
+  margin-top: 20px;
+  display: flex;
+  gap: 90px;
+  color: white;
+  font-size: 19px;
+  opacity: 0.9;
+}
+.second-hard-section .countainer .right-column form .radio .rad {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.second-hard-section .countainer .right-column form .checkbox {
+  display: flex;
+  margin-top: 20px;
+  color: white;
+  font-size: 17px;
+  gap: 119px;
+}
+.second-hard-section .countainer .right-column form .checkbox .check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.second-hard-section .countainer .right-column form .text-area textarea {
+  width: 100%;
+  background-color: #2b304a;
+  border: none;
+  margin-top: 20px;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  height: 200px;
+}
+.second-hard-section .countainer .right-column form .text-area textarea:focus {
+  outline: none;
+  border: #b9f1ff 2px solid;
+}
+.second-hard-section .countainer .right-column form .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.second-hard-section .countainer .right-column form .buttons input:first-child {
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: #282f4d;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.second-hard-section
+  .countainer
+  .right-column
+  form
+  .buttons
+  input:first-child:hover {
+  background-color: #b9f1ff;
+}
+.second-hard-section .countainer .right-column form .buttons input:last-child {
+  width: 100px;
+  background-color: #282f4d;
+  border: white 2px solid;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.second-hard-section
+  .countainer
+  .right-column
+  form
+  .buttons
+  input:last-child:hover {
+  border-color: #b9f1ff;
+  color: #b9f1ff;
+}
+@media (max-width: 767px) {
+  .second-hard-section .countainer .left-coulmn .perant {
+    flex-direction: column;
+  }
+  .second-hard-section .countainer .left-coulmn .perant .l-column {
+    padding-left: 10px;
+  }
+  .second-hard-section .countainer .left-coulmn .perant .r-column ol {
+    padding-left: 10px;
+  }
+  .second-hard-section .countainer .right-column form .name-email {
+    flex-direction: column;
+  }
+  .second-hard-section .countainer .right-column form .radio {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .second-hard-section .countainer .right-column form .checkbox {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+/* second-hard section  */
+/* so hard section */
+.so-hard .countainer {
+  display: flex;
+  justify-content: space-between;
+}
+.so-hard .countainer .l-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 30px;
+  color: white;
+}
+.so-hard .countainer .l-column h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.so-hard .countainer .l-column p {
+  margin-left: 40px;
+  line-height: 1.6;
+}
+.so-hard .countainer .l-column .dd-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+.so-hard .countainer .l-column .dd-buttons button {
+  width: 30%;
+  padding: 10px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button a {
+  color: #282f4d;
+  letter-spacing: 2px;
+  font-size: 16.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:first-child {
+  border: none;
+  transition: 0.3s;
+  background-color: white;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:last-child {
+  border: white 2px solid;
+  background-color: #2b304a;
+  transition: 0.3s;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:last-child a {
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:last-child {
+  background-color: none;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+  transition: 0.3s;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.so-hard .countainer .l-column .actions .dd-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+.so-hard .countainer .l-column .actions .ss-buttons {
+  display: flex;
+  gap: 20px;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button {
+  width: 20%;
+  padding: 7.5px 0;
+  margin-top: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+.so-hard .countainer .l-column .actions .ss-buttons button:last-child {
+  background-color: #282f4d;
+  border: white 2px solid;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button:first-child {
+  border: none;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button a {
+  color: white;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button:last-child:hover {
+  border-color: #b9f1ff;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button:first-child a {
+  color: #282f4d;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button:last-child:hover a {
+  color: #b9f1ff;
+}
+.so-hard .countainer .l-column .actions .ss-buttons button:first-child:hover {
+  background-color: #b9f1ff;
+}
+.lol {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.lol2 {
+  gap: 20px;
+}
+.so-hard .countainer .l-column .tdd-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.so-hard .countainer .l-column .tdd-buttons button {
+  width: 100%;
+  padding: 10px 25px;
+}
+.so-hard .countainer .l-column .tss-buttons button {
+  width: 100% !important;
+  padding: 10px 25px !important;
+}
+.so-hard .countainer .l-column .tss-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0px !important;
+}
+.so-hard .countainer .l-column .again {
+  width: 100%;
+}
+.so-hard .countainer .l-column h1 {
+  margin: 0;
+  font-size: 25px;
+}
+.so-hard .countainer .l-column .pag {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 0;
+}
+.so-hard .countainer .l-column .pag p {
+  border: white 3px solid;
+  padding: 2.5px 15px;
+  margin-left: 0;
+  letter-spacing: 4px;
+  opacity: 0.2;
+  font-weight: bold;
+}
+.so-hard .countainer .l-column .pag .nums {
+  letter-spacing: 6px;
+}
+.so-hard .countainer .l-column .pag .nums:first-letter {
+  background-color: white;
+  width: 5px;
+  padding-left: 5px;
+  align-self: center;
+  text-align: center;
+  color: #282f4d;
+}
+.so-hard .countainer .l-column .pag .nums span {
+  letter-spacing: 2.5px;
+  font-size: 1px;
+}
+.so-hard .countainer .l-column .pag button {
+  background-color: #282f4d;
+  border: white 2px solid;
+  padding: 7.5px 15px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+.so-hard .countainer .l-column .pag button a {
+  color: white;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.so-hard .countainer .l-column .pag button:hover {
+  border-color: #b9f1ff;
+}
+.so-hard .countainer .l-column .pag button:hover a {
+  color: #b9f1ff;
+}
+.so-hard .countainer .l-column .block {
+  font-style: italic;
+  color: white;
+  border-left: 3.5px rgba(255, 255, 255, 0.144) solid;
+  padding: 10px 30px;
+  line-height: 1.6;
+  font-size: 17px;
+}
+.so-hard .countainer .l-column .table table {
+  width: 100%;
+  border-spacing: 0;
+  /* border-collapse: collapse; */
+}
+.so-hard .countainer .l-column .table table thead {
+  border-bottom: rgba(255, 255, 255, 0.212) 1px solid;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.so-hard .countainer .l-column .table table thead td:first-child {
+  padding-left: 10px;
+}
+.so-hard .countainer .l-column .table table thead td {
+  padding-bottom: 10px;
+}
+.so-hard .countainer .l-column .table table tbody {
+  margin-left: 50px;
+}
+.so-hard .countainer .l-column .table table tbody td {
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(146, 144, 144, 0.39);
+}
+.so-hard .countainer .l-column .table table tbody td:first-child {
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.so-hard .countainer .l-column .table table tbody tr:first-child {
+  background-color: #2b304a;
+}
+.so-hard .countainer .l-column .table table tbody tr:nth-child(3) {
+  background-color: #2b304a;
+}
+.so-hard .countainer .l-column .table table tbody tr:last-child {
+  background-color: #2b304a;
+}
+.so-hard .countainer .l-column .table table tfoot td {
+  padding: 15px 0;
+}
+.so-hard .countainer .r-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+.so-hard .countainer .r-column .fit-image {
+  margin-top: 20px;
+}
+.so-hard .countainer .r-column .fit-image img {
+  max-width: 100%;
+}
+.so-hard .countainer .r-column .fit-image h2 {
+  margin-bottom: 20px;
+}
+.so-hard .countainer .r-column .perant {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+.so-hard .countainer .r-column .perant .cill img {
+  max-width: 100%;
+  transition: .6s;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+}
+.so-hard .countainer .r-column .ltr p {
+  display: inline;
+  line-height: 1.6;
+  font-size: 19px;
+}
+.so-hard .countainer .r-column .ltr .imge {
+  margin-right: 20px;
+  float: left;
+}
+.so-hard .countainer .r-column .ltr .imge img {
+  width: 150px;
+}
+.so-hard .countainer .r-column .rtl {
+  margin-top: 50px;
+}
+.so-hard .countainer .r-column .rtl p {
+  direction: rtl;
+  margin-left: 0;
+}
+.so-hard .countainer .r-column .rtl .imge {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.so-hard .countainer .r-column .box {
+  padding: 20px;
+  border: rgba(255, 255, 255, 0.097) 1px solid;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.so-hard .countainer .r-column Pre {
+  max-width: 100%;
+  height: 200px;
+  margin: 0;
+  background-color: #282f4d;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+}
+.so-hard .countainer .r-column Pre code {
+  max-width: 100%;
+  display: block;
+  padding: 0;
+
+  overflow-x: auto;
+  font-size: 14px;
+}
+.contact-section {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .so-hard .countainer {
+    flex-direction: column;
+  }
+  .so-hard .countainer .l-column {
+    width: 100%;
+  }
+  .so-hard .countainer .r-column {
+    width: 100%;
+  }
+  .so-hard .countainer .l-column .actions .dd-buttons button {
+    width: 50%;
+  }
+  .so-hard .countainer .l-column .actions .ss-buttons button {
+    width: 30%;
+  }
+  .so-hard .countainer .l-column .actions .tdd-buttons button {
+    width: 100%;
+    padding: 10px 30px;
+  }
+  .so-hard .countainer .l-column .actions .tdd-buttons {
+    flex-direction: column;
+  }
+  .so-hard .countainer .l-column .actions .tss-buttons {
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  .so-hard .countainer .l-column .actions .tss-buttons button {
+    padding: 10px;
+  }
+  .so-hard .countainer .l-column .actions .lol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .so-hard .countainer .l-column .pag .nums{
+    display: none;
+  }
+  .so-hard .countainer .l-column .table table tbody td {
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+/* so hard section */
+/* some excetintion */
+.so-hard .countainer .r-column .perant .cill img:hover{
+ /* transform:rotate(360deg) ; */
+ transform:skew(10deg) ;
+ -webkit-transform:skew(10deg) ;
+ -moz-transform:skew(10deg) ;
+ -ms-transform:skew(10deg) ;
+ -o-transform:skew(10deg) ;
+}
+/* some excetintion */
